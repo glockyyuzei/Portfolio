@@ -6,7 +6,6 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  /* So it stays behind everything */
   background: black;
 }
 
@@ -354,7 +353,6 @@ header .mobile-nav {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* centers the section vertically */
 }
 
 .project .container .content {
@@ -937,13 +935,8 @@ footer .container .link-container .navigation ul li a {
   border-radius: 8px;
 }
 
-/* ===================================== */
-/* 📱 PORTRAIT MOBILE FIX (CLEAN ONLY)  */
-/* ===================================== */
-
 @media screen and (max-width: 768px) {
 
-  /* Fix container padding */
   .container {
     padding: 1rem 1.5rem;
   }
@@ -1047,7 +1040,6 @@ footer .container .link-container .navigation ul li a {
     background: rgba(255, 255, 255, 0.05);
     transition: transform 0.2s linear;
     flex-direction: row;
-    /* desktop: icon left, button right */
   }
 
   .certificates .certificate-card:hover {
@@ -1064,7 +1056,6 @@ footer .container .link-container .navigation ul li a {
     font-weight: 600;
     transition: 0.3s linear;
     order: 2;
-    /* desktop: button comes after icon */
   }
 
   .certificates .certificate-card button:hover {
@@ -1078,7 +1069,6 @@ footer .container .link-container .navigation ul li a {
     font-size: 18px;
     font-weight: 500;
     order: 1;
-    /* keep text in middle */
   }
 
   .certificates .certificate-card img {
@@ -1086,7 +1076,6 @@ footer .container .link-container .navigation ul li a {
     height: 50px;
     border-radius: 8px;
     order: 0;
-    /* icon on left desktop */
   }
 
   /* === Mobile Portrait Fix === */
@@ -1105,7 +1094,6 @@ footer .container .link-container .navigation ul li a {
     .certificates .certificate-card .cert-name,
     .certificates .certificate-card button {
       order: initial;
-      /* stack naturally on mobile */
     }
   }
 
@@ -1137,22 +1125,19 @@ footer .container .link-container .navigation ul li a {
   }
 }
 
-/* ================= MOBILE FIXES (≤768px) ================= */
-
 /* === HERO SECTION === */
 @media screen and (max-width: 768px) {
   .hero .container .content h1 {
     width: 100%;
-    font-size: 2rem; /* Glocky Yuzei bigger */
+    font-size: 2rem; 
     line-height: 2.5rem;
     text-align: center;
   }
 
   .hero .container .content h1 br {
-    display: none; /* remove any forced line breaks if exist */
+    display: none; 
   }
 
-  /* Optional: Wrap Information Technology Student and IT Enthusiast on separate lines */
   .hero .container .content h1 span:nth-child(2) {
     display: block;
     margin-top: 0.25rem;
@@ -1168,27 +1153,26 @@ footer .container .link-container .navigation ul li a {
 /* === ABOUT ME SECTION === */
 @media screen and (max-width: 768px) {
   .about .container .content .about-me {
-    flex-direction: column; /* stack elements vertically */
+    flex-direction: column; \
     align-items: center;
     gap: 16px;
   }
 
-  /* Description on top */
   .about .container .content .about-me .description {
     width: 100%;
-    order: 0; /* description first */
+    order: 0; 
     text-align: center;
   }
 
   .about .container .content .about-me .profile {
-    width: 60%; /* make picture smaller */
-    order: 1; /* picture below description */
+    width: 60%; 
+    order: 1; 
   }
 
   .about .container .content .about-me .profile .image-box {
     width: 100%;
     height: auto;
-    max-height: 250px; /* restrict mobile image size */
+    max-height: 250px; 
   }
 
   .about .container .content .about-me .profile .image-box img {
@@ -1201,14 +1185,14 @@ footer .container .link-container .navigation ul li a {
 /* === CERTIFICATES SECTION === */
 @media screen and (max-width: 768px) {
   .certificates .certificate-card {
-    flex-direction: column; /* stack vertically */
+    flex-direction: column; 
     align-items: center;
     text-align: center;
     gap: 8px;
   }
 
   .certificates .certificate-card img {
-    order: 0; /* icon on top */
+    order: 0; 
     margin-bottom: 4px;
   }
 
@@ -1217,8 +1201,366 @@ footer .container .link-container .navigation ul li a {
   }
 
   .certificates .certificate-card button {
-    order: 2; /* button at bottom */
-    width: 80%; /* make button full width for mobile */
+    order: 2; 
+    width: 80%; 
     max-width: 200px;
+  }
+}
+
+/* === MATRIX BACKGROUND === */
+#matrixBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* So it stays behind everything */
+  background: black;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  padding: 1rem 6rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  width: 100%;
+  height: 10vh;
+  z-index: 9999;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .logo img {
+  height: 100%;
+  width: 75px;
+}
+
+header .logo a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  transition: 0.3s linear;
+}
+
+header nav a::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s linear;
+}
+
+header nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.3s linear;
+}
+
+header .extra-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+header .extra-nav button {
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px 12px;
+  transition: 0.3s linear;
+}
+
+header .extra-nav button:hover {
+  background: #fff;
+  color: #000;
+  transition: 0.3s linear;
+}
+
+header .hamburger-menu {
+  cursor: pointer;
+  display: none;
+}
+
+header .mobile-nav {
+  display: none;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero .container .content svg {
+  margin-bottom: -9rem;
+}
+
+.hero .container .content svg text {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 132px;
+  animation: stroke 5s infinite alternate;
+}
+
+.hero .container .content h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 48px;
+  width: 65%;
+}
+
+.hero .container .content h1 span {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.hero .container .content button {
+  cursor: pointer;
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  color: #fff;
+  background-color: #000;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.hero .container .content button span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #000;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+.hero .container .content button span:active {
+  transition: all 0.5s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+.hero .container .content button span:not(active) {
+  transition: all 1d;
+}
+
+.about {
+  min-height: 100vh;
+  padding: 3rem 0;
+}
+
+.about .container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+.about .container .content .about-me {
+  display: flex;
+  gap: 12px;
+}
+
+.about .container .content .about-me .profile {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about .container .content .about-me .profile .image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background-color: #191919;
+  border-radius: 16px;
+  width: 75%;
+  height: 75vh;
+}
+
+.about .container .content .about-me .profile .image-box img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about .container .content .about-me .description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about .container .content .about-me .description .name-role {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.about .container .content .about-me .description .name-role h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.about .container .content .about-me .description .name-role .role {
+  width: 100%;
+  display: flex;
+}
+
+.about .container .content .about-me .description .name-role .role h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  padding: 4px 6px;
+  background-color: #fff;
+  border-radius: 8px;
+  color: #000;
+}
+
+.about .container .content .about-me .description p {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+/* ===== MOBILE FIXES ===== */
+@media screen and (max-width: 768px) {
+
+  /* Hero Section Mobile */
+  .hero .container .content h1 {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+
+  .hero .container .content h1 span:nth-child(2),
+  .hero .container .content h1 span:nth-child(3) {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 0.25rem;
+  }
+
+  /* About Me Section Mobile */
+  .about .container .content .about-me {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .about .container .content .about-me .description {
+    width: 100%;
+    order: 0;
+    text-align: center;
+  }
+
+  .about .container .content .about-me .profile {
+    width: 60%;
+    order: 1;
+  }
+
+  .about .container .content .about-me .profile .image-box {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    padding: 16px; 
+    background-color: #191919;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about .container .content .about-me .profile .image-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
   }
 }
