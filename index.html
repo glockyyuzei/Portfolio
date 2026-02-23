@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Icon -->
+  <link rel="icon" href="assets/logo.png" />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio | Glocky Yuzei</title>
+</head>
+<canvas id="matrixBackground"></canvas>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="logo" />
+      <a href="/">Glocky Yuzei</a>
+    </div>
+
+    <nav>
+      <a href="#">Home</a>
+      <br>
+      <a href="#about">About Me</a>
+      <br>
+      <a href="#skill">Tools</a>
+      <br>
+      <a href="#project">Projects</a>
+      <br>
+      <a href="#certificates">Certificates</a>
+      <br>
+      <a href="#contact">Contact Me</a>
+    </nav>
+
+    <div class="extra-nav">
+      <button>Get In Touch</button>
+    </div>
+
+    <div id="menu" class="hamburger-menu">
+      <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 18L20 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+        <path d="M4 12L20 12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+        <path d="M4 6L20 6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="nav-mobile" class="mobile-nav">
+      <div id="close-mobile" class="close">
+        <svg width="800px" height="800px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <style>
+              .cls-1 {
+                fill: none;
+                stroke: #ffffff;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 2px;
+              }
+            </style>
+          </defs>
+
+          <title />
+
+          <g id="cross">
+            <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+            <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+          </g>
+        </svg>
+      </div>
+      <ul>
+        <li><a class="nav-link" href="#">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#skill">Skill</a></li>
+        <li><a class="nav-link" href="#project">Project</a></li>
+        <li><a class="nav-link" href="#certificates">Certificates</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="content">
+        <svg viewBox="0 0 1500 500" data-aos="fade-down">
+          <text x="50%" y="50%" text-anchor="middle">Glocky Yuzei</text>
+        </svg>
+        <h1 data-aos="zoom-in-up">
+          Information Technology Student <span>IT Enthusiast</span>
+        </h1>
+        <button data-aos="zoom-out"><span>Show my Work</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="content">
+        <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">About Me</h1>
+        <div class="about-me">
+          <div data-aos="zoom-out-right" data-aos-delay="300" class="profile">
+            <div class="image-box">
+              <img src="assets/profile.jpeg" alt="profile" />
+            </div>
+          </div>
+          <div data-aos="zoom-in-left" data-aos-delay="300" class="description">
+            <div class="name-role">
+              <h1>Glocky Yuzei</h1>
+              <div class="role">
+                <h2>IT Enthusiast</h2>
+              </div>
+            </div>
+            <p>
+              Hi! my name is Danmil F. Balotol also known as Glocky Yuzei a 19-year-old BSIT student at ACLC College of
+              Tacloban, driven by a passion for technology and
+              problem-solving.
+              I specialize in Computer System Servicing, including networking, server setups, and managing operating
+              systems.
+              Beyond traditional IT work, I’ve gained hands-on experience in Minecraft server development, from
+              configuring plugins
+              and assets to building full servers from scratch.
+              <br /><br />
+              I also explore game development (both 2D and 3D), web development and design, and portfolio creation,
+              combining creativity with technical skills. With experience in database management and software projects,
+              I’m
+              constantly learning new tools and frameworks to expand my expertise.
+              <br /><br />
+              My goal is to grow as a back-end developer and software engineer, taking on challenges that sharpen my
+              skills and deepen my understanding of technology. I’m motivated by learning, collaboration, and building
+              solutions that make
+              an impact.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br><br><br><br><br><br><br><br>
+
+  <!-- Tools -->
+  <section id="skill" class="skill">
+    <div class="container">
+      <div class="content">
+        <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">Tools</h1>
+
+        <div class="tools" data-aos-delay="500">
+          <div data-aos="zoom-in-down" class="tool-box"><img src="assets/icon/cpp.png" alt="c++" /></div>
+          <div data-aos="zoom-in-down" class="tool-box"><img src="assets/icon/java.jpg" alt="java" /></div>
+          <div data-aos="zoom-in-down" class="tool-box"><img src="assets/icon/python.jpg" alt="python" /></div>
+          <div data-aos="zoom-in-down" class="tool-box"><img src="assets/icon/html.jpg" alt="html" /></div>
+          <div data-aos="zoom-in-down" class="tool-box"><img src="assets/icon/css.png" alt="css" /></div>
+          <div data-aos="zoom-in-down" class="tool-box"><img src="assets/icon/javascript.png" alt="javascript" /></div>
+          <div data-aos="zoom-in-down" class="tool-box"><img src="assets/icon/reactjs.png" alt="reactjs" /></div>
+          <div data-aos="zoom-in-down" class="tool-box"><img src="assets/icon/php.png" alt="php" /></div>
+          <div data-aos="zoom-in-down" class="tool-box"><img src="assets/icon/mysql.png" alt="mysql" /></div>
+          <div data-aos="zoom-in-down" class="tool-box"><img src="assets/icon/mongodb.png" alt="mongodb" /></div>
+          <div data-aos="zoom-in-down" class="tool-box"><img src="assets/icon/docker.png" alt="docker" /></div>
+          <div data-aos="zoom-in-down" class="tool-box"><img src="assets/icon/github.jpg" alt="github" /></div>
+        </div>
+      </div>
+  </section>
+
+  <br><br><br><br><br><br><br><br>
+
+  <!-- Projects -->
+  <section id="project" class="project">
+    <div class="container">
+      <div class="content">
+        <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">Projects</h1>
+
+        <div class="projects">
+          <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
+            <img src="assets/project.png" alt="project" />
+            <div class="description">
+              <h1>SkyVale SMP</h1>
+              <p>Owner / Developer</p>
+              <div class="action">
+                <button>IP</button>
+                <button>Discord</button>
+              </div>
+            </div>
+          </div>
+          <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+            <img src="assets/project2.png" alt="project" />
+            <div class="description">
+              <h1>Accepting Projects!</h1>
+              <p>Let me know through the button below.</p>
+              <div class="action center">
+                <button id="contactProjectBtn">Contact Me</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br><br><br><br><br><br><br><br>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="certificates">
+    <div class="container">
+      <div class="content">
+        <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">Certificates</h1>
+
+        <br><br>
+
+        <div class="certificate-list">
+          <div data-aos="zoom-in-down" class="certificate-card">
+            <button onclick="window.open('assets/certificates/tesdacert.jpeg', '_blank')">Show</button>
+            <span class="cert-name">TESDA National Certificate II</span>
+            <img src="assets/icon/tesda.png" alt="tesda_logo" />
+          </div>
+          <!-- Add more certificates here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br><br><br><br><br><br><br><br><br>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">Contact Me</h1>
+    <br>
+    <div class="contact-icons" data-aos="zoom-in-down" data-aos-delay="300">
+      <div class="icon-box" data-info="glockyyuzei@gmail.com">
+        <box-icon color="#fff" type="logo" name="gmail"></box-icon>
+        <span>Gmail</span>
+      </div>
+      <div class="icon-box" data-info="https://github.com/glockyyuzei">
+        <box-icon color="#fff" type="logo" name="github"></box-icon>
+        <span>GitHub</span>
+      </div>
+      <div class="icon-box" data-info="glockyyuzei">
+        <box-icon color="#fff" name="discord" type="logo"></box-icon>
+        <span>Discord</span>
+      </div>
+    </div>
+
+    <br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div data-aos="fade-up" data-aos-duration="1000" class="container">
+      <div class="profile">
+        <div class="logo">
+          <img src="assets/logo.png" alt="logo" />
+          <a href="">Glocky</a>
+        </div>
+        <p>You can check me out on other platforms if you are interested.</p>
+        <div class="social-media-container">
+          <div class="social-media">
+            <box-icon color="#fff" type="logo" name="instagram"></box-icon>
+          </div>
+          <div class="social-media">
+            <box-icon color="#fff" name="youtube" type="logo"></box-icon>
+          </div>
+          <div class="social-media">
+            <box-icon color="#fff" name="facebook-circle" type="logo"></box-icon>
+          </div>
+          <div class="social-media">
+            <box-icon color="#fff" type="logo" name="tiktok"></box-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="link-container">
+        <div class="information">
+          <h1>Socials</h1>
+          <ul>
+            <li><a href="https://www.instagram.com/glockyyuzei/">Instagram</a></li>
+            <li><a href="https://www.youtube.com/@glockyqt">Youtube</a></li>
+            <li><a href="https://www.facebook.com/glockyyyyy">Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@glockyyuzei?is_from_webapp=1&sender_device=pc">Tiktok</a></li>
+          </ul>
+        </div>
+
+        <div class="resource">
+          <h1>Navigation</h1>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+
+        <div class="navigation">
+          <h1>Services</h1>
+          <ul>
+            <li><a>Computer System Servicing</a></li>
+            <li><a>Web Development</a></li>
+            <li><a>Minecraft Server Development</a></li>
+            <li><a>Game Development</a></li>
+            <li><a>Programming Tutor</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer Socials -->
+  <div class="socials">
+    <button class="social-btn" data-social="instagram"><i class="fa-brands fa-instagram"></i></button>
+    <button class="social-btn" data-social="youtube"><i class="fa-brands fa-youtube"></i></button>
+    <button class="social-btn" data-social="facebook"><i class="fa-brands fa-facebook"></i></button>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="socialModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="socialTitle"></h2>
+      <p id="socialInfo"></p>
+    </div>
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <span id="close-popup" class="close-popup">&times;</span>
+      <p id="popup-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- Box Icon -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
