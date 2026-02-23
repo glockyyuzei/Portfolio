@@ -1136,3 +1136,89 @@ footer .container .link-container .navigation ul li a {
     width: 100%;
   }
 }
+
+/* ================= MOBILE FIXES (≤768px) ================= */
+
+/* === HERO SECTION === */
+@media screen and (max-width: 768px) {
+  .hero .container .content h1 {
+    width: 100%;
+    font-size: 2rem; /* Glocky Yuzei bigger */
+    line-height: 2.5rem;
+    text-align: center;
+  }
+
+  .hero .container .content h1 br {
+    display: none; /* remove any forced line breaks if exist */
+  }
+
+  /* Optional: Wrap Information Technology Student and IT Enthusiast on separate lines */
+  .hero .container .content h1 span:nth-child(2) {
+    display: block;
+    margin-top: 0.25rem;
+    font-size: 1.2rem;
+  }
+
+  .hero .container .content h1 span:nth-child(3) {
+    display: block;
+    font-size: 1.2rem;
+  }
+}
+
+/* === ABOUT ME SECTION === */
+@media screen and (max-width: 768px) {
+  .about .container .content .about-me {
+    flex-direction: column; /* stack elements vertically */
+    align-items: center;
+    gap: 16px;
+  }
+
+  /* Description on top */
+  .about .container .content .about-me .description {
+    width: 100%;
+    order: 0; /* description first */
+    text-align: center;
+  }
+
+  .about .container .content .about-me .profile {
+    width: 60%; /* make picture smaller */
+    order: 1; /* picture below description */
+  }
+
+  .about .container .content .about-me .profile .image-box {
+    width: 100%;
+    height: auto;
+    max-height: 250px; /* restrict mobile image size */
+  }
+
+  .about .container .content .about-me .profile .image-box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* === CERTIFICATES SECTION === */
+@media screen and (max-width: 768px) {
+  .certificates .certificate-card {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .certificates .certificate-card img {
+    order: 0; /* icon on top */
+    margin-bottom: 4px;
+  }
+
+  .certificates .certificate-card .cert-name {
+    order: 1;
+  }
+
+  .certificates .certificate-card button {
+    order: 2; /* button at bottom */
+    width: 80%; /* make button full width for mobile */
+    max-width: 200px;
+  }
+}
