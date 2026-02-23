@@ -1143,15 +1143,12 @@ footer .container .link-container .navigation ul li a {
 @media screen and (max-width: 768px) {
   .hero .container .content h1 {
     width: 100%;
-    font-size: 0.5rem;
+    font-size: 2rem;
+    /* Glocky Yuzei bigger */
     line-height: 2.5rem;
     text-align: center;
   }
 
-  .hero .container .content svg text {
-    font-size: 350px;
-  }
-  
   .hero .container .content h1 br {
     display: none;
     /* remove any forced line breaks if exist */
@@ -1236,8 +1233,4 @@ footer .container .link-container .navigation ul li a {
     max-width: 200px;
   }
 }
-
-
-
-
 
