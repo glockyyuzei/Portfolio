@@ -1143,13 +1143,13 @@ footer .container .link-container .navigation ul li a {
 @media screen and (max-width: 768px) {
   .hero .container .content h1 {
     width: 100%;
-    font-size: 1rem;
+    font-size: 0.5rem;
     line-height: 2.5rem;
     text-align: center;
   }
 
   .hero .container .content svg text {
-    font-size: 200px;
+    font-size: 350px;
   }
   
   .hero .container .content h1 br {
@@ -1236,6 +1236,7 @@ footer .container .link-container .navigation ul li a {
     max-width: 200px;
   }
 }
+
 
 
 
