@@ -1150,7 +1150,7 @@ footer .container .link-container .navigation ul li a {
   }
 
   .hero .container .content svg text {
-    font-size: 5rem;
+    font-size: 120px;
   }
   
   .hero .container .content h1 br {
@@ -1237,6 +1237,7 @@ footer .container .link-container .navigation ul li a {
     max-width: 200px;
   }
 }
+
 
 
 
