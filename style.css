@@ -1024,15 +1024,89 @@ footer .container .link-container .navigation ul li a {
     height: auto;
   }
 
-  /* ===== CERTIFICATES ===== */
+  /* === Certificates Section === */
+  .certificates {
+    padding: 3rem 0;
+  }
+
   .certificates .certificate-list {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .certificates .certificate-card {
-    flex-direction: column;
-    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #fff;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s linear;
+    flex-direction: row;
+    /* desktop: icon left, button right */
+  }
+
+  .certificates .certificate-card:hover {
+    transform: scale(1.02);
+  }
+
+  .certificates .certificate-card button {
+    cursor: pointer;
+    padding: 10px 16px;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    background: transparent;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.3s linear;
+    order: 2;
+    /* desktop: button comes after icon */
+  }
+
+  .certificates .certificate-card button:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  .certificates .certificate-card .cert-name {
+    flex: 1;
     text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    order: 1;
+    /* keep text in middle */
+  }
+
+  .certificates .certificate-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    order: 0;
+    /* icon on left desktop */
+  }
+
+  /* === Mobile Portrait Fix === */
+  @media screen and (max-width: 768px) {
+    .certificates .certificate-list {
+      width: 100%;
+    }
+
+    .certificates .certificate-card {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .certificates .certificate-card img,
+    .certificates .certificate-card .cert-name,
+    .certificates .certificate-card button {
+      order: initial;
+      /* stack naturally on mobile */
+    }
   }
 
   /* ===== CONTACT ===== */
