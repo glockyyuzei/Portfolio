@@ -936,3 +936,129 @@ footer .container .link-container .navigation ul li a {
   height: 50px;
   border-radius: 8px;
 }
+
+/* ===================================== */
+/* 📱 PORTRAIT MOBILE FIX (CLEAN ONLY)  */
+/* ===================================== */
+
+@media screen and (max-width: 768px) {
+
+  /* Fix container padding */
+  .container {
+    padding: 1rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  /* ===== HERO ===== */
+  .hero .container .content svg text {
+    font-size: 60px;
+  }
+
+  .hero .container .content svg {
+    margin-bottom: -3rem;
+  }
+
+  .hero .container .content h1 {
+    width: 100%;
+    font-size: 1.2rem;
+    line-height: 28px;
+  }
+
+  /* ===== ABOUT SECTION ===== */
+  .about .container .content .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about .container .content .about-me .profile,
+  .about .container .content .about-me .description {
+    width: 100%;
+  }
+
+  .about .container .content .about-me .profile .image-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .about .container .content .about-me .profile .image-box img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about .container .content .about-me .description .name-role h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about .container .content .about-me .description .name-role .role {
+    justify-content: center;
+  }
+
+  .about .container .content .about-me .description p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  /* ===== TOOLS ===== */
+  .skill .container .content .tools {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+
+  /* ===== PROJECTS ===== */
+  .project {
+    min-height: auto;
+  }
+
+  .project .container .content .projects {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .project .container .content .projects .card {
+    width: 100%;
+    height: auto;
+  }
+
+  /* ===== CERTIFICATES ===== */
+  .certificates .certificate-list {
+    width: 100%;
+  }
+
+  .certificates .certificate-card {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* ===== CONTACT ===== */
+  .contact-icons {
+    gap: 1.5rem;
+  }
+
+  /* ===== FOOTER ===== */
+  footer .container {
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+  }
+
+  footer .container .profile {
+    width: 100%;
+  }
+
+  footer .container .link-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  footer .container .link-container .information,
+  footer .container .link-container .resource,
+  footer .container .link-container .navigation {
+    width: 100%;
+  }
+}
